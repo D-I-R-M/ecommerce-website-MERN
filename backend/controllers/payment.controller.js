@@ -125,7 +125,7 @@ async function createStripeCoupon(discountPercentage) {
 	});
 
 	return coupon.id;
-};
+}
 
 async function createNewCoupon(userId) {
 	await Coupon.findOneAndDelete({ userId });
@@ -140,4 +140,4 @@ async function createNewCoupon(userId) {
 	await newCoupon.save();
 
 	return newCoupon;
-};
+}
